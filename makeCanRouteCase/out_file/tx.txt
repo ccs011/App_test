@@ -1,0 +1,526 @@
+    message CAN1::mrESC_WhlSpdDir m_mrESC_WhlSpdDir;//0x32A
+    message CAN1::VCU_ADAS_F01 m_VCU_ADAS_F01;//0x266
+    message CAN1::MPC_APA_Request m_MPC_APA_Request;//TargetSteeringAngle)
+    message CAN1::EPS_StrSysSt m_EPS_StrSysSt;//0x2A3
+    message CAN1::SRS_CrashInfo m_SRS_CrashInfo;//0x07D
+    message CAN1::mrESC_RWhlSpd m_mrESC_RWhlSpd;//0x23D
+    message CAN1::MPC_BCM_Cmd m_MPC_BCM_Cmd;//0x23F
+    message CAN1::EPS_SASAngle m_EPS_SASAngle;//0x135
+    message CAN1::SWC_IVI m_SWC_IVI;//0x246
+    message CAN1::mrESC_FWhlSpd m_mrESC_FWhlSpd;//0x23C
+    message CAN1::VDC_MRR_SysSt m_VDC_MRR_SysSt;//0x238
+    message CAN1::srBI_VehSt m_srBI_VehSt;//0x1F4
+    message CAN1::MRR_PSSSysSt m_MRR_PSSSysSt;//0x143
+    message CAN1::MRR_SysSt m_MRR_SysSt;//0x140
+    message CAN1::MPC_VCU_ACC m_MPC_VCU_ACC;//0x160
+    message CAN1::VCU_ACC m_VCU_ACC;//0x153
+//0x07D
+on sysvar_update CAN1::SRS_CrashInfo::E_OccupantDetDRVSideVd{
+		m_SRS_CrashInfo.OccupantDetDRVSideVd.phys	=	@this;
+		output(m_SRS_CrashInfo);
+}
+//0x07D
+on sysvar_update CAN1::SRS_CrashInfo::E_OccupantDetDRVSideSRS{
+		m_SRS_CrashInfo.OccupantDetDRVSideSRS.phys	=	@this;
+		output(m_SRS_CrashInfo);
+}
+//0x07D
+on sysvar_update CAN1::SRS_CrashInfo::E_DispVehSpd{
+		m_SRS_CrashInfo.DispVehSpd.phys	=	@this;
+		output(m_SRS_CrashInfo);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_SAS_SteerWheelRotSpd{
+		m_EPS_SASAngle.SAS_SteerWheelRotSpd.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_SAS_SteerWheelRotDir{
+		m_EPS_SASAngle.SAS_SteerWheelRotDir.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_SAS_FailureSts{
+		m_EPS_SASAngle.SAS_FailureSts.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_SAS_CalibrationSts{
+		m_EPS_SASAngle.SAS_CalibrationSts.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_SteeringWheelAngle{
+		m_EPS_SASAngle.SteeringWheelAngle.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_BrkPrsVd{
+		m_EPS_SASAngle.BrkPrsVd.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_VDCFailure{
+		m_EPS_SASAngle.VDCFailure.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_TCSFailure{
+		m_EPS_SASAngle.TCSFailure.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_EBDFailure{
+		m_EPS_SASAngle.EBDFailure.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_BrkPrs{
+		m_EPS_SASAngle.BrkPrs.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_ABSFailure{
+		m_EPS_SASAngle.ABSFailure.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_TCSItvInProgress{
+		m_EPS_SASAngle.TCSItvInProgress.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_NoBrakeForce{
+		m_EPS_SASAngle.NoBrakeForce.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_BrakeDiscTempHigh{
+		m_EPS_SASAngle.BrakeDiscTempHigh.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_AYCItvInProgress{
+		m_EPS_SASAngle.AYCItvInProgress.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x135
+on sysvar_update CAN1::EPS_SASAngle::E_ABSItvInProgress{
+		m_EPS_SASAngle.ABSItvInProgress.phys	=	@this;
+		output(m_EPS_SASAngle);
+}
+//0x238
+on sysvar_update CAN1::VDC_MRR_SysSt::E_ACCMode_ESP{
+		m_VDC_MRR_SysSt.ACCMode_ESP.phys	=	@this;
+		output(m_VDC_MRR_SysSt);
+}
+//0x140
+on sysvar_update CAN1::MRR_SysSt::E_AccAxTarAim{
+		m_MRR_SysSt.AccAxTarAim.phys	=	@this;
+		output(m_MRR_SysSt);
+}
+//0x140
+on sysvar_update CAN1::MRR_SysSt::E_DriveOff{
+		m_MRR_SysSt.DriveOff.phys	=	@this;
+		output(m_MRR_SysSt);
+}
+//0x140
+on sysvar_update CAN1::MRR_SysSt::E_DecToStop{
+		m_MRR_SysSt.DecToStop.phys	=	@this;
+		output(m_MRR_SysSt);
+}
+//0x143
+on sysvar_update CAN1::MRR_PSSSysSt::E_AEBaxTar{
+		m_MRR_PSSSysSt.AEBaxTar.phys	=	@this;
+		output(m_MRR_PSSSysSt);
+}
+//0x143
+on sysvar_update CAN1::MRR_PSSSysSt::E_AEBDecCtrlRequest{
+		m_MRR_PSSSysSt.AEBDecCtrlRequest.phys	=	@this;
+		output(m_MRR_PSSSysSt);
+}
+//0x160
+on sysvar_update CAN1::MPC_VCU_ACC::E_VLCAvailable{
+		m_MPC_VCU_ACC.VLCAvailable.phys	=	@this;
+		output(m_MPC_VCU_ACC);
+}
+//0x160
+on sysvar_update CAN1::MPC_VCU_ACC::E_VLCActive{
+		m_MPC_VCU_ACC.VLCActive.phys	=	@this;
+		output(m_MPC_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_HBBActive{
+		m_VCU_ACC.HBBActive.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_VLC_InternalTargetAcceleration{
+		m_VCU_ACC.VLC_InternalTargetAcceleration.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_EBS_BrkPelPosAct{
+		m_VCU_ACC.EBS_BrkPelPosAct.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_EBS_BrkPelPosActVD{
+		m_VCU_ACC.EBS_BrkPelPosActVD.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//active)
+on sysvar_update CAN1::VCU_ACC::E_VCU_CDD_active{
+		m_VCU_ACC.VCU_CDD_active.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//available)
+on sysvar_update CAN1::VCU_ACC::E_VCU_CDD_available{
+		m_VCU_ACC.VCU_CDD_available.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_CDDActiveVehHold{
+		m_VCU_ACC.CDDActiveVehHold.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_AutoHoldActive{
+		m_VCU_ACC.AutoHoldActive.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_ACCPassiveSts{
+		m_VCU_ACC.ACCPassiveSts.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x153
+on sysvar_update CAN1::VCU_ACC::E_GearMove{
+		m_VCU_ACC.GearMove.phys	=	@this;
+		output(m_VCU_ACC);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_HVBSOCVCU{
+		m_srBI_VehSt.HVBSOCVCU.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_VehicleStandstill{
+		m_srBI_VehSt.VehicleStandstill.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_Poslamp{
+		m_srBI_VehSt.Poslamp.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_PsgDoorStatus{
+		m_srBI_VehSt.PsgDoorStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_TrunkDoorSts{
+		m_srBI_VehSt.TrunkDoorSts.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_RRDoorStatus{
+		m_srBI_VehSt.RRDoorStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_RLDoorStatus{
+		m_srBI_VehSt.RLDoorStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_DRVUnlockState{
+		m_srBI_VehSt.DRVUnlockState.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_DrvDoorStatus{
+		m_srBI_VehSt.DrvDoorStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_HeadLampLowBeamCtrl{
+		m_srBI_VehSt.HeadLampLowBeamCtrl.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_HeadLampHighBeamCtrl{
+		m_srBI_VehSt.HeadLampHighBeamCtrl.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_TurnSwitch{
+		m_srBI_VehSt.TurnSwitch.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_KeyState{
+		m_srBI_VehSt.KeyState.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_HoodStatus{
+		m_srBI_VehSt.HoodStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_HazardWarnLightSW{
+		m_srBI_VehSt.HazardWarnLightSW.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_TurnSwitchVd{
+		m_srBI_VehSt.TurnSwitchVd.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_FrontWiperStatus{
+		m_srBI_VehSt.FrontWiperStatus.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_DirIndicationLeft{
+		m_srBI_VehSt.DirIndicationLeft.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_DirIndicationRight{
+		m_srBI_VehSt.DirIndicationRight.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_AutoLightSW{
+		m_srBI_VehSt.AutoLightSW.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//0x1F4
+on sysvar_update CAN1::srBI_VehSt::E_RearFogLamp{
+		m_srBI_VehSt.RearFogLamp.phys	=	@this;
+		output(m_srBI_VehSt);
+}
+//TargetSteeringAngle)
+on sysvar_update CAN1::MPC_APA_Request::E_APA_EPS_TargetSteeringAngle{
+		m_MPC_APA_Request.APA_EPS_TargetSteeringAngle.phys	=	@this;
+		output(m_MPC_APA_Request);
+}
+//CtrlReq)
+on sysvar_update CAN1::MPC_APA_Request::E_APA_EPS_CtrlReq{
+		m_MPC_APA_Request.APA_EPS_CtrlReq.phys	=	@this;
+		output(m_MPC_APA_Request);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_WhlSpdFRVd{
+		m_mrESC_FWhlSpd.WhlSpdFRVd.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_WhlSpdFR{
+		m_mrESC_FWhlSpd.WhlSpdFR.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_WhlSpdFLVd{
+		m_mrESC_FWhlSpd.WhlSpdFLVd.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_WhlSpdFL{
+		m_mrESC_FWhlSpd.WhlSpdFL.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_VehSpd{
+		m_mrESC_FWhlSpd.VehSpd.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23C
+on sysvar_update CAN1::mrESC_FWhlSpd::E_VehSpdVd{
+		m_mrESC_FWhlSpd.VehSpdVd.phys	=	@this;
+		output(m_mrESC_FWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_HHC_Failure{
+		m_mrESC_RWhlSpd.HHC_Failure.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_HHCActive{
+		m_mrESC_RWhlSpd.HHCActive.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_WhlSpdRRVd{
+		m_mrESC_RWhlSpd.WhlSpdRRVd.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_WhlSpdRR{
+		m_mrESC_RWhlSpd.WhlSpdRR.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_WhlSpdRLVd{
+		m_mrESC_RWhlSpd.WhlSpdRLVd.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x23D
+on sysvar_update CAN1::mrESC_RWhlSpd::E_WhlSpdRL{
+		m_mrESC_RWhlSpd.WhlSpdRL.phys	=	@this;
+		output(m_mrESC_RWhlSpd);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_AEB_available{
+		m_VCU_ADAS_F01.AEB_available.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_AEB_active{
+		m_VCU_ADAS_F01.AEB_active.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_BrkPedSts{
+		m_VCU_ADAS_F01.BrkPedSts.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_BrkPedVd{
+		m_VCU_ADAS_F01.BrkPedVd.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_GasPdlPsnExVd{
+		m_VCU_ADAS_F01.GasPdlPsnExVd.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_ReadyInd{
+		m_VCU_ADAS_F01.ReadyInd.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_GearPsn{
+		m_VCU_ADAS_F01.GearPsn.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x266
+on sysvar_update CAN1::VCU_ADAS_F01::E_GasPdlPsnEx{
+		m_VCU_ADAS_F01.GasPdlPsnEx.phys	=	@this;
+		output(m_VCU_ADAS_F01);
+}
+//0x246
+on sysvar_update CAN1::SWC_IVI::E_SWCLeft_Cent{
+		m_SWC_IVI.SWCLeft_Cent.phys	=	@this;
+		output(m_SWC_IVI);
+}
+//0x23F
+on sysvar_update CAN1::MPC_BCM_Cmd::E_MPC_TurnLightCmd{
+		m_MPC_BCM_Cmd.MPC_TurnLightCmd.phys	=	@this;
+		output(m_MPC_BCM_Cmd);
+}
+//0x23F
+on sysvar_update CAN1::MPC_BCM_Cmd::E_HornCmd{
+		m_MPC_BCM_Cmd.HornCmd.phys	=	@this;
+		output(m_MPC_BCM_Cmd);
+}
+//0x23F
+on sysvar_update CAN1::MPC_BCM_Cmd::E_LowBeamCmd{
+		m_MPC_BCM_Cmd.LowBeamCmd.phys	=	@this;
+		output(m_MPC_BCM_Cmd);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_FRWheelDir{
+		m_mrESC_WhlSpdDir.FRWheelDir.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_FLWheelDir{
+		m_mrESC_WhlSpdDir.FLWheelDir.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_RLWheelDir{
+		m_mrESC_WhlSpdDir.RLWheelDir.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_RRWheelDir{
+		m_mrESC_WhlSpdDir.RRWheelDir.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_RLWheelSpdPulse{
+		m_mrESC_WhlSpdDir.RLWheelSpdPulse.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_FRWheelSpdPulse{
+		m_mrESC_WhlSpdDir.FRWheelSpdPulse.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_FLWheelSpdPulse{
+		m_mrESC_WhlSpdDir.FLWheelSpdPulse.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x32A
+on sysvar_update CAN1::mrESC_WhlSpdDir::E_RRWheelSpdPulse{
+		m_mrESC_WhlSpdDir.RRWheelSpdPulse.phys	=	@this;
+		output(m_mrESC_WhlSpdDir);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_TosionBarTorqueValid{
+		m_EPS_StrSysSt.TosionBarTorqueValid.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPS_APAControlSts{
+		m_EPS_StrSysSt.EPS_APAControlSts.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPS_APAControlFaultSts{
+		m_EPS_StrSysSt.EPS_APAControlFaultSts.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_TorsionBarTorque{
+		m_EPS_StrSysSt.TorsionBarTorque.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPSFailure{
+		m_EPS_StrSysSt.EPSFailure.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPS_CalibrationSts{
+		m_EPS_StrSysSt.EPS_CalibrationSts.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_TorsionBarTorqueDir{
+		m_EPS_StrSysSt.TorsionBarTorqueDir.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_FailureLampSts{
+		m_EPS_StrSysSt.FailureLampSts.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPBSys{
+		m_EPS_StrSysSt.EPBSys.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}
+//0x2A3
+on sysvar_update CAN1::EPS_StrSysSt::E_EPBSWSts{
+		m_EPS_StrSysSt.EPBSWSts.phys	=	@this;
+		output(m_EPS_StrSysSt);
+}

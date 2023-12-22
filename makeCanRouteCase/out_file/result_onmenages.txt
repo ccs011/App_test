@@ -1,0 +1,80 @@
+on message CAN2::SRS_CrashInfo{
+		act_dirs_srs_crashinfo = this.dir;
+		act_dlc_srs_crashinfo = this.dlc;
+		act_id_srs_crashinfo  = this.id;
+}
+on message CAN2::EPS_SASAngle01{
+		act_dirs_eps_sasangle01 = this.dir;
+		act_dlc_eps_sasangle01 = this.dlc;
+		act_id_eps_sasangle01  = this.id;
+}
+on message CAN2::VDC_MRR_SysSt{
+		act_dirs_vdc_mrr_sysst = this.dir;
+		act_dlc_vdc_mrr_sysst = this.dlc;
+		act_id_vdc_mrr_sysst  = this.id;
+}
+on message CAN2::MRR_SysSt{
+		act_dirs_mrr_sysst = this.dir;
+		act_dlc_mrr_sysst = this.dlc;
+		act_id_mrr_sysst  = this.id;
+}
+on message CAN2::MRR_PSSSysSt{
+		act_dirs_mrr_psssysst = this.dir;
+		act_dlc_mrr_psssysst = this.dlc;
+		act_id_mrr_psssysst  = this.id;
+}
+on message CAN2::MPC_VCU_ACC{
+		act_dirs_mpc_vcu_acc = this.dir;
+		act_dlc_mpc_vcu_acc = this.dlc;
+		act_id_mpc_vcu_acc  = this.id;
+}
+on message CAN2::VCU_ACC{
+		act_dirs_vcu_acc = this.dir;
+		act_dlc_vcu_acc = this.dlc;
+		act_id_vcu_acc  = this.id;
+}
+on message CAN2::srBI_VehSt01{
+		act_dirs_srbi_vehst01 = this.dir;
+		act_dlc_srbi_vehst01 = this.dlc;
+		act_id_srbi_vehst01  = this.id;
+}
+on message CAN2::MPC_APA_Request{
+		act_dirs_mpc_apa_request = this.dir;
+		act_dlc_mpc_apa_request = this.dlc;
+		act_id_mpc_apa_request  = this.id;
+}
+on message CAN2::mrESC_FWhlSpd{
+		act_dirs_mresc_fwhlspd = this.dir;
+		act_dlc_mresc_fwhlspd = this.dlc;
+		act_id_mresc_fwhlspd  = this.id;
+}
+on message CAN2::mrESC_RWhlSpd{
+		act_dirs_mresc_rwhlspd = this.dir;
+		act_dlc_mresc_rwhlspd = this.dlc;
+		act_id_mresc_rwhlspd  = this.id;
+}
+on message CAN2::VCU_ADAS_F01{
+		act_dirs_vcu_adas_f01 = this.dir;
+		act_dlc_vcu_adas_f01 = this.dlc;
+		act_id_vcu_adas_f01  = this.id;
+}
+on message CAN2::SWC_IVI{
+		act_dirs_swc_ivi = this.dir;
+		act_dlc_swc_ivi = this.dlc;
+		act_id_swc_ivi  = this.id;
+}
+on message CAN2::MPC_BCM_Cmd{
+		act_dirs_mpc_bcm_cmd = this.dir;
+		act_dlc_mpc_bcm_cmd = this.dlc;
+		act_id_mpc_bcm_cmd  = this.id;
+}
+on message CAN2::mrESC_WhlSpdDir{
+		act_dirs_mresc_whlspddir = this.dir;
+		act_dlc_mresc_whlspddir = this.dlc;
+		act_id_mresc_whlspddir  = this.id;
+}
+on message CAN2::EPS_StrSysSt{
+		act_dirs_eps_strsysst = this.dir;
+		act_dlc_eps_strsysst = this.dlc;
+		act_id_eps_strsysst  = this.id;
+}

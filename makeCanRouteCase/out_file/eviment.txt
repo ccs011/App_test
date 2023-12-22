@@ -1,0 +1,137 @@
+  <namespace name="CAN1" comment="" interface="">
+      <namespace name="SRS_CrashInfo" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_OccupantDetDRVSideVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_OccupantDetDRVSideSRS" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DispVehSpd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="EPS_SASAngle" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SAS_SteerWheelRotSpd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SAS_SteerWheelRotDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SAS_FailureSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SAS_CalibrationSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SteeringWheelAngle" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_BrkPrsVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VDCFailure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TCSFailure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EBDFailure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_BrkPrs" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_ABSFailure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TCSItvInProgress" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_NoBrakeForce" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_BrakeDiscTempHigh" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AYCItvInProgress" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_ABSItvInProgress" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="VDC_MRR_SysSt" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_ACCMode_ESP" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="MRR_SysSt" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AccAxTarAim" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DriveOff" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DecToStop" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="MRR_PSSSysSt" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AEBaxTar" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AEBDecCtrlRequest" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="MPC_VCU_ACC" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VLCAvailable" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VLCActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="VCU_ACC" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HBBActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VLC_InternalTargetAcceleration" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EBS_BrkPelPosAct" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EBS_BrkPelPosActVD" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VCU_CDD_active" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VCU_CDD_available" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_CDDActiveVehHold" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AutoHoldActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_ACCPassiveSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_GearMove" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="srBI_VehSt" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HVBSOCVCU" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VehicleStandstill" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_Poslamp" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_PsgDoorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TrunkDoorSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RRDoorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RLDoorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DRVUnlockState" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DrvDoorStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HeadLampLowBeamCtrl" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HeadLampHighBeamCtrl" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TurnSwitch" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_KeyState" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HoodStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HazardWarnLightSW" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TurnSwitchVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FrontWiperStatus" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DirIndicationLeft" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_DirIndicationRight" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AutoLightSW" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RearFogLamp" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="MPC_APA_Request" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_APA_EPS_TargetSteeringAngle" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_APA_EPS_CtrlReq" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="mrESC_FWhlSpd" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdFRVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdFR" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdFLVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdFL" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VehSpd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_VehSpdVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="mrESC_RWhlSpd" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HHC_Failure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HHCActive" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdRRVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdRR" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdRLVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_WhlSpdRL" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="VCU_ADAS_F01" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AEB_available" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_AEB_active" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_BrkPedSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_BrkPedVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_GasPdlPsnExVd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_ReadyInd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_GearPsn" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_GasPdlPsnEx" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="SWC_IVI" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_SWCLeft_Cent" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="MPC_BCM_Cmd" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_MPC_TurnLightCmd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_HornCmd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_LowBeamCmd" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="mrESC_WhlSpdDir" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FRWheelDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FLWheelDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RLWheelDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RRWheelDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RLWheelSpdPulse" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FRWheelSpdPulse" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FLWheelSpdPulse" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_RRWheelSpdPulse" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+      <namespace name="EPS_StrSysSt" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TosionBarTorqueValid" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPS_APAControlSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPS_APAControlFaultSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TorsionBarTorque" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPSFailure" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPS_CalibrationSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_TorsionBarTorqueDir" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_FailureLampSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPBSys" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="E_EPBSWSts" comment="" bitcount="32" isSigned="true" encoding="65001" type="float" />
+      </namespace>
+   </namespace>
+</systemvariables>

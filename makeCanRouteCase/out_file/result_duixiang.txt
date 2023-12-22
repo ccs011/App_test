@@ -1,0 +1,80 @@
+		//0x07D
+		int act_dirs_srs_crashinfo;
+		int act_dlc_srs_crashinfo;
+		int act_id_srs_crashinfo;
+
+		//0x135
+		int act_dirs_eps_sasangle01;
+		int act_dlc_eps_sasangle01;
+		int act_id_eps_sasangle01;
+
+		//0x238
+		int act_dirs_vdc_mrr_sysst;
+		int act_dlc_vdc_mrr_sysst;
+		int act_id_vdc_mrr_sysst;
+
+		//0x140
+		int act_dirs_mrr_sysst;
+		int act_dlc_mrr_sysst;
+		int act_id_mrr_sysst;
+
+		//0x143
+		int act_dirs_mrr_psssysst;
+		int act_dlc_mrr_psssysst;
+		int act_id_mrr_psssysst;
+
+		//0x160
+		int act_dirs_mpc_vcu_acc;
+		int act_dlc_mpc_vcu_acc;
+		int act_id_mpc_vcu_acc;
+
+		//0x153
+		int act_dirs_vcu_acc;
+		int act_dlc_vcu_acc;
+		int act_id_vcu_acc;
+
+		//0x1F4
+		int act_dirs_srbi_vehst01;
+		int act_dlc_srbi_vehst01;
+		int act_id_srbi_vehst01;
+
+		//TargetSteeringAngle)
+		int act_dirs_mpc_apa_request;
+		int act_dlc_mpc_apa_request;
+		int act_id_mpc_apa_request;
+
+		//0x23C
+		int act_dirs_mresc_fwhlspd;
+		int act_dlc_mresc_fwhlspd;
+		int act_id_mresc_fwhlspd;
+
+		//0x23D
+		int act_dirs_mresc_rwhlspd;
+		int act_dlc_mresc_rwhlspd;
+		int act_id_mresc_rwhlspd;
+
+		//0x266
+		int act_dirs_vcu_adas_f01;
+		int act_dlc_vcu_adas_f01;
+		int act_id_vcu_adas_f01;
+
+		//0x246
+		int act_dirs_swc_ivi;
+		int act_dlc_swc_ivi;
+		int act_id_swc_ivi;
+
+		//0x23F
+		int act_dirs_mpc_bcm_cmd;
+		int act_dlc_mpc_bcm_cmd;
+		int act_id_mpc_bcm_cmd;
+
+		//0x32A
+		int act_dirs_mresc_whlspddir;
+		int act_dlc_mresc_whlspddir;
+		int act_id_mresc_whlspddir;
+
+		//0x2A3
+		int act_dirs_eps_strsysst;
+		int act_dlc_eps_strsysst;
+		int act_id_eps_strsysst;
+
